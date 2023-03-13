@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>HTML Tages:</title>
+    <style type="text/css">
+table {
+border: 4px dashed blue;
+width:50%;
+font-size:23px;
+color:white;
+}
+
+td {
+    border: 2px solid black;
+    background-color:rgb(86, 19, 83);
+    color:white;
+    padding-top:3px;
+}
+th {
+    border: 2px solid black;
+    background-color: brown;
+    color:white;
+}
+
+.marq {
+  opacity: 0.7;
+  color:red;
+}
+
+</style>
+</head>
+
+
+<body>
+    Hello World!
+    <p>This is a Paragraph!</p>
+    <h1>This is the header 1</h1>
+    <h2>This is the header 2</h2>
+    <h3>This is the header 3</h3>
+    <h4>This is the header 4</h4>
+    <h5>This is the header 5</h5>
+    <h6>This is the header 6</h6>
+    <hr/>
+    <p>My name is Maaz. <br/>And my father name is Hafeez Ullah</p>
+    <!-- formatting elements -->
+    <b>Bold value</b> <br/>
+    <u>Underline Contenet</u>  <br/>
+    <strike>deleted value by strike</strike>  <br/>
+    <del>deleted value by del</del> <br/>
+    x<sub>5</sub>  <br/>
+    2<sup>4</sup>  <br/>
+    <pre>leaving blank space    intenllially!</pre>
+    <mark>this is marked value!</mark>     <br/>
+    <img src="maaz.jpg" alt="Maaz Ahmad Picture!" style="height:200px; width:200px"/>   <!--/ is used at last if only one opeing tag-->
+    <p> <a href="https://r.search.yahoo.com/_ylt=AwrO6t5nOt5jlVUaCW5XNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1675537128/RO=10/RU=https%3a%2f%2fwww.google.com%2f/RK=2/RS=gz_mE8DHEo4Hc9OFUj5erHRA76A-">check out google link </a> </p>
+    <p> <a href="list_related.html">List HTML</a></p>
+
+<!-- Table... -->
+    <h3>Table..</h3>
+    <!-- <table border="5" cellpadding="5" cellspacing="3" width=50% > without CSS apply it..-->
+    <table>
+        <caption>Cast of all Friends:</caption>
+       <tr><th colspan="3">All</th> </tr>
+    <tr>
+     <th>Common:</th>
+     <th>First Name:</th>
+     <th>Last Name:</th>
+    </tr>
+    
+    
+
+    <tr>
+
+        <td rowspan="4">Muhammad</td>
+        <td>Ahmad</td>
+        <td>Maaz</td>
+    </tr>
+
+    <tr>
+        <td>Hafeez</td>
+        <td>Ullah</td>
+    </tr>
+
+    <tr>
+        <td>Asad</td>
+        <td>Shafiq</td>
+    </tr>
+    <tr>
+        <td>Abdullah</td>
+        <td>Hanif</td>
+    </tr>
+
+    <tr>
+        <td rowspan="4">Mohammed</td>
+        <td>Abdulrehman</td>
+        <td>Kang</td>
+    </tr>
+
+    <tr>
+        <td>Talha</td>
+        <td>Kang</td>
+    </tr>
+    <tr>
+        <td>Tamoor</td>
+        <td>Kang</td>
+    </tr>
+    <tr>
+        <td>Tayyab</td>
+        <td>Kang</td>
+    </tr>
+
+    </table>
+    <!-- Unorder List! -->
+    <h3> Unorder Lists:</h3>
+    <ul type="square">   <!--circle, disc-->
+        <li>Potatos</li>
+        <li>Tomatoes</li>
+        <li>Breads</li>
+        <li>Cheese</li>
+        <li>Chicken</li>
+    </ul>
+    <!--Order list! -->
+    <h3>Order Lists:</h3>
+    <ol type="i" reversed>
+      <li>Potatos:</li>
+      <li>Tomatoes</li>
+      <li>Breads</li>
+      <li>Cheese</li>
+      <li>Chicken</li>
+    </ol>
+  <!--Defination list!-->
+   <dl>
+     <dt>HTML</dt>
+     <dd>Hyper Text Markup Language</dd>
+     <dt>CSS</dt>
+     <dd>Cascading Style Sheet</dd>
+     <dt>UOS</dt>
+     <dd>University of Sargodha</dd>
+   </dl>
+ 
+    <!--order list into unorder list like defination description!-->
+    <ul type="circle">
+        <li>Orange</li>
+        <ol>
+           <li>The famous city for producing  Orange is Sargodha!</li>
+           <li>Orange is very tasty Fruit!</li>
+
+        </ol>
+        <li>Mangoes</li>
+        <ol>
+           <li>The famous city for producing Mangoes is Multan!</li>
+           <li>Mangoes is the king of all Fruit!</li>
+
+        </ol>
+
+    </ul>
+    <!--iframe related-->
+    <h3>Another Website page: </h3>
+    <iframe src="list_related.html" frameborder="5px" width="40%" height="300px">
+    </iframe>
+    <!--iframe also use for embeded videos from youtube....  -->
+    <h3>Pick the Video from Youtube!</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xwg9Lf5ruUE" 
+    title="YouTube video player" frameborder="11px" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+
+    <!--Form. -->
+    <h3>Form to pick the data from different users:</h3>
+    <form>
+    <fieldset>
+
+    <!-- Text  -->
+   <legend>Student Information</legend>
+    First Name:<input type="text" name="first name" size="14" maxlength="5" />      <br> <br> <!--maxlength is defined last no.-->
+    Last Name:<input type="text" name="second name" size="15" maxlength="5"/>  <br> <br>
+
+    <!-- Password  -->
+    Password: <input type="password" />     <br><br>
+    
+    <!-- radio  -->
+    Gender:<input type="radio" name="gender" value="male" checked   />Male
+    <input type="radio" name="gender" value="male" />Female
+    <input type="radio" name="gender" value="male" />Others <br><br>
+
+    <!-- Checkbox  -->
+    Courses: 
+    <input type="checkbox" value="Information Technology" name="Mathematices" checked /> Information Technology
+    <input type="checkbox" value="Mathematices" name="course" /> Mathematices
+    <input type="checkbox" value="Urdu" name="course" /> Urdu
+    <input type="checkbox" value="English" name="course" /> English
+    <input type="checkbox" value="Punjabi" name="course" /> Punjabi
+   <br> <br>
+    <!-- Dropdown  -->
+    <p>Select Your Course</p>
+    <select name="select_courses">
+    <option value="Information Technology">Information Technology</option>
+    <option value="Mathematices " selected>Mathematices</option>
+    <option value="Urdu">Urdu</option>
+    <option value="English">English</option>
+    <option value="Punjabi">Punjabi</option>
+    <option value="Software Engineering">Software Engineering</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Food Science">Food Science</option>
+    </select>
+    <br> <br>
+    <!--Text area  -->
+    <textarea name="textarea" cols="30" rows="10"></textarea> <br> <br>
+    <!-- Reset Button--> 
+    <input type="reset" value="reset_button" />  <br> <br>
+    <!-- Simple Button--> 
+    <input type="button" value="Button" />  <br> <br>
+    <!-- Submet Button--> 
+    <input type="submit" value="submit_button" />  <br> <br> 
+    
+    </fieldset>
+    </form>
+    <br>
+    <!-- marquee tag -->
+    <marquee behavior="scroll" direction="right" width="400px" scrollamount="4" class="marq" > <!--scrollamount means speed of the scrolling-->
+    Muhammad Maaz Ahmad.
+    </marquee>  <br>
+    <!--abbreviation to the word... -->
+    Do you know the nickname of <abbr title = "Kaptain">Imran Khan</abbr>?
+    <br/> <br/>
+    <!-- a special term and display it differently. -->
+    My Name is <dfn>Muhammad Maaz Ahmad</dfn> Are you know? <br>
+
+    <!-- quotes of any celebrity written in  -->
+    <blockquote>There is no power on earth that can undo Pakistan.   <br>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    --Muhammad Ali Jannah--
+    </blockquote>
+    
+    <!-- itlaic language -->
+    My name is <em>Muhammad Maaz Ahmad </em> not only maaz. <br/> <br/>  
+
+    <!-- adding a double quote to your statement -->
+    My name is <q>Muhammad Maaz Ahmad</q>. were you know? <br/> <br/>
+
+    <!-- text visualization as mono-spaced font -->
+    This is an example of code <code>html, css and JavaScript</code> <br/> <br/>
+
+    <!-- defines text as input from a keyboard -->
+    This is an example of <kbd> JavaScript </kbd>    <br/>
+    Please enter the <kbd> Ctrl+C </kbd> for copy  <br/><br/>
+
+    <!--  to specify and emphasize that a set of text is an address. -->
+    <address>
+        Written by <a href="mailto:muhammadmaazahmad292@gmail.com">Maaz Ahmad</a> <br/> 
+        Visit us at:<br>
+        <a href="http://www.google.com">Google.com</a><br>
+        Sargodha, Punjab<br>
+        Pakistan
+        </address>
+    <!--how to add video in website......-->
+    <p>Add Video in the Webste:</p>
+    <video width="300px", height="300px" controls autoplaymuted>
+        <source src="video.mp4" type="video/mp4"/>
+
+        <!-- do later <area> <favicon> <artical> <aside> <audio> to complete alphabets... -->
+    </video>
+
+
+</body>
+</html>
